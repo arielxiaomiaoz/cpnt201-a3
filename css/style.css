@@ -1,0 +1,31 @@
+/* set a non-white background */
+main{
+  background-color: rgb(252, 177, 127);
+}
+
+/* making the egg looks pretty */
+.eggyolk{
+  fill: rgb(222, 236, 96);
+  filter:drop-shadow(-15px 15px 15px rgba(220, 221, 172, 0.7));
+}
+
+.eggwhite-base{
+  fill: white;
+  filter:drop-shadow(-15px 15px 15px rgba(104, 104, 98, 0.7));
+}
+.eggwhite-hump{
+  fill: white;
+}
+
+/* using media query to change the color */
+@media only screen and (max-width: 600px) {
+  .eggwhite-base{
+    fill: rgb(130, 236, 219);
+  }
+  .eggwhite-hump{
+    fill: rgb(130, 236, 219);
+  }
+  .eggyolk{
+    fill: white;
+  }
+}
